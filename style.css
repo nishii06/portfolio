@@ -256,3 +256,38 @@ h1,h2,h3,h4{font-family:var(--font-display);color:var(--ink);}
 .footer{padding:28px 24px;border-top:1px solid #EEF2F3;}
 .footer-inner{display:flex;align-items:center;gap:12px;justify-content:center;}
 .footer-inner p{font-size:13.5px;color:var(--ink-soft);}
+
+/* RESPONSIVE */
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr;padding-top:40px;}
+  .hero-text{order:2;}
+  .hero-image{order:1;margin-bottom:24px;}
+  .about-grid,.skills-grid,.projects-grid{grid-template-columns:1fr 1fr;}
+  .contact-grid{grid-template-columns:1fr;}
+}
+@media (max-width:640px){
+  .nav-links{
+    position:absolute;top:100%;left:0;right:0;
+    background:#fff;flex-direction:column;
+    padding:20px 24px;gap:18px;
+    border-bottom:1px solid #EEF2F3;
+    display:none;
+  }
+  .nav-links.open{display:flex;}
+  .nav-toggle{display:flex;}
+  .hero h1{font-size:32px;}
+  .about-grid,.skills-grid,.projects-grid{grid-template-columns:1fr;}
+  .form-row{flex-direction:column;}
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  *{transition:none !important;}
+}
+
+/* Focus visibility */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible{
+  outline:2px solid var(--orange);
+  outline-offset:2px;
+}
