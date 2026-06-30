@@ -1,0 +1,34 @@
+:root{
+  --orange:#E08A3C;
+  --teal:#147A8C;
+  --teal-dark:#0E5663;
+  --sky:#4FC3E8;
+  --ink:#1B3A4B;
+  --ink-soft:#5C7480;
+  --bg:#FFFFFF;
+  --bg-soft:#F6F8F9;
+  --radius:14px;
+  --shadow:0 10px 30px rgba(20,122,140,0.10);
+  --font-display:'Poppins',sans-serif;
+  --font-body:'Inter',sans-serif;
+}
+
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:var(--font-body);
+  color:var(--ink);
+  background:var(--bg);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+.container{
+  width:100%;
+  max-width:1140px;
+  margin:0 auto;
+  padding:0 24px;
+}
+a{text-decoration:none;color:inherit;}
+ul{list-style:none;}
+img{max-width:100%;display:block;}
+h1,h2,h3,h4{font-family:var(--font-display);color:var(--ink);}
