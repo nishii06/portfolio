@@ -251,3 +251,8 @@ h1,h2,h3,h4{font-family:var(--font-display);color:var(--ink);}
   outline:none;border-color:var(--teal);
 }
 .form-note{font-size:13px;color:var(--teal);min-height:18px;}
+
+/* FOOTER */
+.footer{padding:28px 24px;border-top:1px solid #EEF2F3;}
+.footer-inner{display:flex;align-items:center;gap:12px;justify-content:center;}
+.footer-inner p{font-size:13.5px;color:var(--ink-soft);}
