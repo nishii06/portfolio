@@ -23,3 +23,12 @@ window.addEventListener('scroll', () => {
     a.classList.toggle('active', a.getAttribute('href') === `#${current}`);
   });
 });
+
+// Contact form
+const form = document.getElementById('contactForm');
+const note = document.getElementById('formNote');
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  note.textContent = "Thanks! Your message has been noted.";
+  form.reset();
+});
